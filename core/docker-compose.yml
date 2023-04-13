@@ -22,7 +22,7 @@ services:
       - traefik.enable=true
       - traefik.docker.network=proxy
       - traefik.http.routers.traefik-secure.entrypoints=websecure
-      - traefik.http.routers.traefik-secure.rule=Host(`traefik.yourdomain.com`)
+      - traefik.http.routers.traefik-secure.rule=Host(`tra.moodsonic.com`)
       - traefik.http.routers.traefik-secure.service=api@internal
       - traefik.http.routers.traefik-secure.middlewares=user-auth@file
 
@@ -42,7 +42,7 @@ services:
       - traefik.enable=true
       - traefik.docker.network=proxy
       - traefik.http.routers.portainer-secure.entrypoints=websecure
-      - traefik.http.routers.portainer-secure.rule=Host(`portainer.yourdomain.com`)
+      - traefik.http.routers.portainer-secure.rule=Host(`por.moodsonic.com`)
       - traefik.http.routers.portainer-secure.service=portainer
       - traefik.http.services.portainer.loadbalancer.server.port=9000
 
