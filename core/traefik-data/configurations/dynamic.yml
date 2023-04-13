@@ -11,7 +11,7 @@ http:
     user-auth:
       basicAuth:
         users:
-          - "raf:$apr1$MTqfVwiE$FKkzT5ERGFqwH9f3uipxA1"
+          - "an:$xxxx"
 
 tls:
   options:
